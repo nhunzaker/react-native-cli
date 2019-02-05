@@ -7,8 +7,8 @@
  * @format
  */
 
-import fs from 'fs';
-import removePodEntry from './removePodEntry';
+const fs = require('fs');
+const removePodEntry = require('./removePodEntry');
 
 /**
  * Unregister native module IOS with CocoaPods

@@ -7,7 +7,7 @@
  * @format
  */
 
-import readPodfile from './readPodfile';
+const readPodfile = require('./readPodfile');
 
 module.exports = function isInstalled(iOSProject, dependencyConfig) {
   if (!iOSProject.podfile) {

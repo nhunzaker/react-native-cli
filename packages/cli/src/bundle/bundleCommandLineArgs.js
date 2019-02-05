@@ -7,7 +7,7 @@
  * @flow
  */
 
-import path from 'path';
+const path = require('path');
 
 export type CommandLineArgs = {
   assetsDest?: string,

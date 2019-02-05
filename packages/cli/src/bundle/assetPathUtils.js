@@ -81,7 +81,7 @@ function getBasePath(asset: PackagerAsset) {
   return basePath;
 }
 
-export default {
+module.exports = {
   getAndroidAssetSuffix,
   getAndroidResourceFolderName,
   getAndroidResourceIdentifier,

@@ -7,7 +7,7 @@
  * @format
  */
 
-import normalizeProjectName from './normalizeProjectName';
+const normalizeProjectName = require('./normalizeProjectName');
 
 module.exports = function makeBuildPatch(name) {
   const normalizedProjectName = normalizeProjectName(name);

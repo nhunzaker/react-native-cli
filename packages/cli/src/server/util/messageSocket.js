@@ -5,12 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import url from 'url';
-import { Server as WebSocketServer } from 'ws';
-import notifier from 'node-notifier';
-import logger from '../../util/logger';
+const url = require('url');
+const WebSocketServer = require('ws').Server;
 
 const PROTOCOL_VERSION = 2;
+const notifier = require('node-notifier');
+const logger = require('../../util/logger');
 
 function parseMessage(data, binary) {
   if (binary) {
@@ -232,4 +232,7 @@ function attachToServer(server, path) {
   };
 }
 
-export default { attachToServer, parseMessage };
+module.exports = {
+  attachToServer,
+  parseMessage,
+};

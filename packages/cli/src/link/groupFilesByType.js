@@ -7,8 +7,8 @@
  * @format
  */
 
-import { groupBy } from 'lodash';
-import mime from 'mime';
+const { groupBy } = require('lodash');
+const mime = require('mime');
 
 /**
  * Since there are no officially registered MIME types

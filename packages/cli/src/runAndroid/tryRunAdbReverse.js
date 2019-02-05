@@ -7,9 +7,9 @@
  * @flow
  */
 
-import { execFileSync } from 'child_process';
-import logger from '../util/logger';
-import getAdbPath from './getAdbPath';
+const { execFileSync } = require('child_process');
+const logger = require('../util/logger');
+const getAdbPath = require('./getAdbPath');
 
 // Runs ADB reverse tcp:8081 tcp:8081 to allow loading the jsbundle from the packager
 function tryRunAdbReverse(packagerPort: number | string, device: string) {

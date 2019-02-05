@@ -8,8 +8,8 @@
  * @flow strict
  */
 
-import path from 'path';
-import fs from 'fs';
+const path = require('path');
+const fs = require('fs');
 
 function findReactNativeScripts(): ?string {
   const executablePath = path.resolve(

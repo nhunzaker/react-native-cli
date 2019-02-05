@@ -8,10 +8,9 @@
  */
 
 // gracefulify() has to be called before anything else runs
-// eslint-disable-next-line no-unused-vars
-import gracefulFs from './util/gracefulFs';
+require('graceful-fs').gracefulify(require('fs'));
 
-import cli from './cliEntry';
+const cli = require('./cliEntry');
 
 if (require.main === module) {
   cli.run();

@@ -2,7 +2,7 @@
  * @flow
  */
 
-import getPackageConfiguration from './getPackageConfiguration';
+const getPackageConfiguration = require('./getPackageConfiguration');
 
 module.exports = function getParams(root: string) {
   const config = getPackageConfiguration(root);

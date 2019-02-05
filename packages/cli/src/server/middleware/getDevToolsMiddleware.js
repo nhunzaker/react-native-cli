@@ -6,8 +6,8 @@
  *
  * @format
  */
-import launchChrome from '../util/launchChrome';
-import logger from '../../util/logger';
+const launchChrome = require('../util/launchChrome');
+const logger = require('../../util/logger');
 
 function launchChromeDevTools(host, port, args = '') {
   const debuggerURL = `http://${host}:${port}/debugger-ui${args}`;

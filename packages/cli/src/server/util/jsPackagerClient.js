@@ -7,9 +7,9 @@
  * @format
  */
 
-import WebSocket from 'ws';
-import logger from '../../util/logger';
-import MessageSocket from './messageSocket';
+const WebSocket = require('ws');
+const logger = require('../../util/logger');
+const { parseMessage } = require('./messageSocket');
 
 const PROTOCOL_VERSION = 2;
 const TARGET_SERVER = 'server';
@@ -29,7 +29,7 @@ class JsPackagerClient {
     });
 
     this.ws.on('message', (data, flags) => {
-      const message = MessageSocket.parseMessage(data, flags.binary);
+      const message = parseMessage(data, flags.binary);
       const msgCallback = this.msgCallbacks.get(message.id);
       if (message === undefined || message.id === undefined) {
         // gracefully ignore wrong messages or broadcasts

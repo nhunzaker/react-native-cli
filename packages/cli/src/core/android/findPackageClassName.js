@@ -7,9 +7,9 @@
  * @format
  */
 
-import fs from 'fs';
-import glob from 'glob';
-import path from 'path';
+const fs = require('fs');
+const glob = require('glob');
+const path = require('path');
 
 /**
  * Gets package's class name (class that implements ReactPackage)

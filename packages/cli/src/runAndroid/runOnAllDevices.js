@@ -9,11 +9,11 @@
 
 /* eslint-disable consistent-return */
 
-import { spawnSync, execFileSync } from 'child_process';
-import logger from '../util/logger';
-import adb from './adb';
-import tryRunAdbReverse from './tryRunAdbReverse';
-import tryLaunchAppOnDevice from './tryLaunchAppOnDevice';
+const { spawnSync, execFileSync } = require('child_process');
+const logger = require('../util/logger');
+const adb = require('./adb');
+const tryRunAdbReverse = require('./tryRunAdbReverse');
+const tryLaunchAppOnDevice = require('./tryLaunchAppOnDevice');
 
 function getCommand(appFolder, command) {
   return appFolder ? `${appFolder}:${command}` : command;

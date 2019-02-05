@@ -6,12 +6,12 @@
  *
  */
 
-import Metro from 'metro';
+const Metro = require('metro');
 
-import denodeify from 'denodeify';
-import fs from 'fs';
-import path from 'path';
-import util from 'util';
+const denodeify = require('denodeify');
+const fs = require('fs');
+const path = require('path');
+const util = require('util');
 
 async function dependencies(argv, configPromise, args, packagerInstance) {
   const rootModuleAbsolutePath = args.entryFile;

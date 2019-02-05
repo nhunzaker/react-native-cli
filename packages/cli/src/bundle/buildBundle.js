@@ -7,15 +7,16 @@
  * @flow
  */
 
-import Server from 'metro/src/Server';
-
-import outputBundle from 'metro/src/shared/output/bundle';
-import path from 'path';
-import type { CommandLineArgs } from './bundleCommandLineArgs';
 import type { ContextT } from '../core/types.flow';
-import saveAssets from './saveAssets';
-import loadMetroConfig from '../util/loadMetroConfig';
-import logger from '../util/logger';
+import type { CommandLineArgs } from './bundleCommandLineArgs';
+
+const Server = require('metro/src/Server');
+
+const outputBundle = require('metro/src/shared/output/bundle');
+const path = require('path');
+const saveAssets = require('./saveAssets');
+const loadMetroConfig = require('../util/loadMetroConfig');
+const logger = require('../util/logger');
 
 async function buildBundle(
   args: CommandLineArgs,

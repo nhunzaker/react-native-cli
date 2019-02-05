@@ -7,7 +7,7 @@
  * @format
  */
 
-import path from 'path';
+const path = require('path');
 
 /**
  * List of projects that should not be treated as projects to be linked.

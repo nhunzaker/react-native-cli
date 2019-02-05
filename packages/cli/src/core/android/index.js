@@ -7,11 +7,11 @@
  * @format
  */
 
-import path from 'path';
-import findAndroidAppFolder from './findAndroidAppFolder';
-import findManifest from './findManifest';
-import findPackageClassName from './findPackageClassName';
-import readManifest from './readManifest';
+const path = require('path');
+const findAndroidAppFolder = require('./findAndroidAppFolder');
+const findManifest = require('./findManifest');
+const findPackageClassName = require('./findPackageClassName');
+const readManifest = require('./readManifest');
 
 const getPackageName = manifest => manifest.attr.package;
 

@@ -7,8 +7,8 @@
  * @format
  */
 
-import buildBundle from './buildBundle';
-import bundleCommandLineArgs from './bundleCommandLineArgs';
+const buildBundle = require('./buildBundle');
+const bundleCommandLineArgs = require('./bundleCommandLineArgs');
 
 /**
  * Builds the bundle starting to look for dependencies at the given entry path.
@@ -25,7 +25,3 @@ module.exports = {
   // Used by `ramBundle.js`
   withOutput: bundleWithOutput,
 };
-
-const withOutput = bundleWithOutput;
-
-export { withOutput };

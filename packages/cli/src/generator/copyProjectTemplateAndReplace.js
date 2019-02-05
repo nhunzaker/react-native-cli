@@ -7,14 +7,12 @@
  * @format
  */
 
-import chalk from 'chalk';
-import path from 'path';
-import copyAndReplace from '../util/copyAndReplace';
-import promptInitializer from './promptSync';
-import walk from '../util/walk';
-import logger from '../util/logger';
-
-const prompt = promptInitializer();
+const chalk = require('chalk');
+const path = require('path');
+const copyAndReplace = require('../util/copyAndReplace');
+const prompt = require('./promptSync')();
+const walk = require('../util/walk');
+const logger = require('../util/logger');
 
 /**
  * Util for creating a new React Native project.

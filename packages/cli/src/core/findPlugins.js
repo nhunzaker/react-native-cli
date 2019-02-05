@@ -7,8 +7,8 @@
  * @flow
  */
 
-import path from 'path';
-import { union, uniq, flatten } from 'lodash';
+const path = require('path');
+const { union, uniq, flatten } = require('lodash');
 
 const RNPM_PLUGIN_PATTERNS = [/^rnpm-plugin-/, /^@(.*)\/rnpm-plugin-/];
 

@@ -7,8 +7,8 @@
  * @format
  */
 
-import PbxFile from 'xcode/lib/pbxFile';
-import removeFromPbxReferenceProxySection from './removeFromPbxReferenceProxySection';
+const PbxFile = require('xcode/lib/pbxFile');
+const removeFromPbxReferenceProxySection = require('./removeFromPbxReferenceProxySection');
 
 /**
  * Removes file from static libraries

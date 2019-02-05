@@ -7,8 +7,8 @@
  * @format
  */
 
-import registerDependencyIOS from '../registerNativeModule';
-import registerDependencyPods from '../../pods/registerNativeModule';
+const registerDependencyIOS = require('../registerNativeModule');
+const registerDependencyPods = require('../../pods/registerNativeModule');
 
 module.exports = function registerNativeModule(
   name,

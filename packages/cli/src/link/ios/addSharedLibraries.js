@@ -7,7 +7,7 @@
  * @format
  */
 
-import createGroupWithMessage from './createGroupWithMessage';
+const createGroupWithMessage = require('./createGroupWithMessage');
 
 module.exports = function addSharedLibraries(project, libraries) {
   if (!libraries.length) {

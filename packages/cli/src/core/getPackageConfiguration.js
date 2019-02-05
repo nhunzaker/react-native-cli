@@ -1,8 +1,9 @@
 /**
  * @flow
  */
-import path from 'path';
 import type { PackageConfigurationT } from './types.flow';
+
+const path = require('path');
 
 /**
  * Returns configuration of the CLI from `package.json`.

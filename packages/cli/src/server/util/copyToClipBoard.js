@@ -7,10 +7,10 @@
  * @format
  */
 
-import { spawn } from 'child_process';
+const { spawn } = require('child_process');
 
-import path from 'path';
-import fs from 'fs';
+const path = require('path');
+const fs = require('fs');
 
 const xsel = path.join(__dirname, 'external/xsel');
 fs.chmodSync(xsel, '0755');

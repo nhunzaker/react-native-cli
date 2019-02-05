@@ -7,9 +7,9 @@
  * @format
  */
 
-import plistParser from 'plist';
-import fs from 'fs';
-import getPlistPath from './getPlistPath';
+const plistParser = require('plist');
+const fs = require('fs');
+const getPlistPath = require('./getPlistPath');
 
 /**
  * Returns Info.plist located in the iOS project

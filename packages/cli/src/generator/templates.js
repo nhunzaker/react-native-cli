@@ -7,11 +7,11 @@
  * @format
  */
 
-import { execSync } from 'child_process';
-import fs from 'fs';
-import path from 'path';
-import copyProjectTemplateAndReplace from './copyProjectTemplateAndReplace';
-import logger from '../util/logger';
+const { execSync } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+const copyProjectTemplateAndReplace = require('./copyProjectTemplateAndReplace');
+const logger = require('../util/logger');
 
 /**
  * @param destPath Create the new project at this path.
@@ -183,4 +183,6 @@ function installTemplateDevDependencies(templatePath, yarnVersion) {
   }
 }
 
-export { createProjectFromTemplate };
+module.exports = {
+  createProjectFromTemplate,
+};

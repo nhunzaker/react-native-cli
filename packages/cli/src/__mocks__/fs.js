@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import path from 'path';
-import MemoryFS from 'metro-memory-fs';
+const path = require('path');
+const MemoryFS = require('metro-memory-fs');
 
 let fs;
 

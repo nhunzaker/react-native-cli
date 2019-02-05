@@ -7,12 +7,12 @@
  * @format
  */
 
-import readPodfile from './readPodfile';
-import findPodTargetLine from './findPodTargetLine';
-import findLineToAddPod from './findLineToAddPod';
-import findMarkedLinesInPodfile from './findMarkedLinesInPodfile';
-import addPodEntry from './addPodEntry';
-import savePodFile from './savePodFile';
+const readPodfile = require('./readPodfile');
+const findPodTargetLine = require('./findPodTargetLine');
+const findLineToAddPod = require('./findLineToAddPod');
+const findMarkedLinesInPodfile = require('./findMarkedLinesInPodfile');
+const addPodEntry = require('./addPodEntry');
+const savePodFile = require('./savePodFile');
 
 module.exports = function registerNativeModulePods(
   name,

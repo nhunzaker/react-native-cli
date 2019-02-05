@@ -2,10 +2,10 @@
  * @flow
  */
 
-import path from 'path';
 import type { PlatformsT } from './types.flow';
 
-import findPlugins from './findPlugins';
+const path = require('path');
+const findPlugins = require('./findPlugins');
 
 /**
  * Support for `ios` and `android` platforms is built-in

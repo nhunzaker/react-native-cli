@@ -2,7 +2,6 @@
  * @flow
  */
 
-import path from 'path';
 import type {
   PlatformsT,
   ContextT,
@@ -10,10 +9,12 @@ import type {
   DependencyConfigT,
 } from '../core/types.flow';
 
-import getPackageConfiguration from '../core/getPackageConfiguration';
-import getParams from '../core/getParams';
-import getHooks from '../core/getHooks';
-import getAssets from '../core/getAssets';
+const path = require('path');
+
+const getPackageConfiguration = require('../core/getPackageConfiguration');
+const getParams = require('../core/getParams');
+const getHooks = require('../core/getHooks');
+const getAssets = require('../core/getAssets');
 
 type DependenciesConfig = {
   config: DependencyConfigT,

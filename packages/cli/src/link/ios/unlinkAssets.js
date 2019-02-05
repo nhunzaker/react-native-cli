@@ -6,15 +6,15 @@
  *
  */
 
-import fs from 'fs-extra';
-import path from 'path';
-import xcode from 'xcode';
-import { difference } from 'lodash';
-import log from '../../util/logger';
+const fs = require('fs-extra');
+const path = require('path');
+const xcode = require('xcode');
+const { difference } = require('lodash');
+const log = require('../../util/logger');
 
-import groupFilesByType from '../groupFilesByType';
-import getPlist from './getPlist';
-import writePlist from './writePlist';
+const groupFilesByType = require('../groupFilesByType');
+const getPlist = require('./getPlist');
+const writePlist = require('./writePlist');
 
 /**
  * Unlinks assets from iOS project. Removes references for fonts from `Info.plist`

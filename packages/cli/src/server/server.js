@@ -8,7 +8,7 @@
  * @flow
  */
 
-import path from 'path';
+const path = require('path');
 
 module.exports = {
   name: 'start',

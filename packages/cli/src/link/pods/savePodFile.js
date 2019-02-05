@@ -7,7 +7,7 @@
  * @format
  */
 
-import fs from 'fs';
+const fs = require('fs');
 
 module.exports = function savePodFile(podfilePath, podLines) {
   const newPodfile = podLines.join('\n');

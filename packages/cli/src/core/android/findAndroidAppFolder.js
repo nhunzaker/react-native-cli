@@ -7,8 +7,8 @@
  * @format
  */
 
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 /**
  * @param  {String} folder Folder to seek in
