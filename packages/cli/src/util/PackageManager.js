@@ -4,7 +4,7 @@ import yarn from './yarn';
 
 type PackageManagerOptions = {
   forceNpm?: boolean,
-  projectDir: string,
+  projectDir?: string,
 };
 
 export default class PackageManager {
@@ -22,7 +22,8 @@ export default class PackageManager {
     return (
       !this.options.forceNpm &&
       yarn.getYarnVersionIfAvailable() &&
-      yarn.isGlobalCliUsingYarn(this.options.projectDir)
+      (!this.options.projectDir ||
+        yarn.isGlobalCliUsingYarn(this.options.projectDir))
     );
   }
 

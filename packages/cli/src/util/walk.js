@@ -15,6 +15,10 @@ function walk(current) {
     return [current];
   }
 
+  if (current.includes('node_modules')) {
+    return [];
+  }
+
   const files = fs
     .readdirSync(current)
     .map(child => walk(path.join(current, child)));
